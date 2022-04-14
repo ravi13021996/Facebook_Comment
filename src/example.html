@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        height: 400px;
+        width: 400px;
+    }
+    
+    button {
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <a href="./Famous Personalities.csv" download>
+        <input type="file">
+        <h1>Hiii</h1>
+    </a>
+
+    <input onkeyup="changeHandle()" />
+
+    <button>Download</button>
+
+</body>
+
+
+<script>
+    let commnetData = [{
+        id: "111",
+        name: "ravi",
+        msg: "This is worng",
+        pid: "000",
+        reply: [{
+            id: "222",
+            pid: "111",
+            name: "Yasin",
+            msg: "ythis is wrong",
+            reply: []
+        }, {
+            id: "223",
+            pid: "111",
+            name: "tez",
+            msg: "tell me y this is wrong",
+            reply: [{
+                id: "333",
+                pid: "222",
+                name: "ravi",
+                msg: "because this is not right",
+                reply: []
+            }, {
+                id: "332",
+                pid: "222",
+                name: "james",
+                msg: "Y are you asking frequently",
+                reply: []
+            }]
+        }]
+    }, {
+        id: "112",
+        name: "shashi",
+        msg: "This is Normal",
+        pid: "000",
+        reply: []
+    }, {
+        id: "113",
+        name: "atul",
+        msg: "This is Right",
+        pid: "000",
+        reply: []
+    }]
+
+
+    const changeHandle = () => {
+        console.log("hii")
+    }
+    let arrData = [{
+        name: "ravi",
+        reply: []
+    }, {
+        name: "ravi",
+        reply: []
+    }, {
+        name: "ravi",
+        reply: []
+    }]
+</script>
+
+</html>
